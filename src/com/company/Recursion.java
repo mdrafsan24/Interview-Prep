@@ -18,13 +18,22 @@ public class Recursion {
                 recursion(param)
 
         Internal works:
+        -------------------
+        -- To be reviewed
 
+        - All recursive solutions can be iterative as well, depends on the problem + efficiency
+        - Use recursion when
+            -> Problems can be broken down into sub problems
+            -> When we can compromise time and space
+            -> Avoid recursion when working on embedded system i.e Airbag software since
+            time is crucial
+            -> Recursion = quick and dirty solution (factorial, fibonacci)
+            -> Data structure implemented using Recursion = Stack, Tree, Sorting, Searching
+            Divide and Conquer, Dynamic programming (breakdown prob into smaller chunks, save
+            the answer and use that answer for bigger problems)
         */
 
-
-
     }
-
     public int factorial (int n) {
         if (n == 0) {
             return 1;
@@ -42,4 +51,6 @@ public class Recursion {
         }
         return (fibonacci(n-1) + fibonacci(n-2));
     }
+
+
 }
